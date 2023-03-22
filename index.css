@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(225, 238, 238);
+}
+/* universal padding */
+.uni-padding{
+    padding: 0 8%;
+}
+.box-shadow{
+    box-shadow: 2px 2px 2px 1px rgb(176, 169, 169);
+}
+/* header styling */
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    z-index: 1082;
+    background-color: rgba(0, 0, 0, 0.738);
+
+}
+
+#header h1 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#header nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 12px;
+}
+
+#header nav ul li a{
+    text-decoration: none;
+    font-weight:600;
+    color: rgb(255, 255, 255);
+}
+
+/* Home section */
+#home{
+    margin-top: -80px;
+}
+.img{
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 115vh;
+    opacity: 0.88;
+    z-index: -1;
+}
+.home-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 40%;
+   left:20%;
+   right: 20%;
+   color: aliceblue;
+   font-size: 2vw;
+   background: rgba(0, 0, 0, 0.601);
+   padding: 22px;
+   border-radius: 22px;
+   max-width: 1000px;
+   margin: auto;
+}
+/* about container */
+.container-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#About{
+    width: 100%;
+    max-width: 1100px;
+    margin:5% auto;
+    background-color: white;
+    padding: 28px;
+    border-radius: 5px; 
+}
+.about-child{
+    width: 50%;
+}
+.personal-info{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: center;
+}
+.about-yourself ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.skill-set{
+    /* background-color: rgb(171, 195, 195); */
+    padding: 10px;
+    margin: 12px;
+    
+
+}
+.skill-set h2{
+    margin-bottom: 22px;
+    border-bottom: 1px solid blue;
+    
+}
+.skill-percent{
+    background-color: rgb(195, 188, 188);
+    margin: 15px 0;
+    border-radius: 22px ;
+    font-size: 12px;
+
+}
+.common{
+    border-radius: 22px;
+    padding: 5px;
+    text-align: center;
+    background-color: blueviolet;
+    color: antiquewhite;
+    
+
+}
+.html{
+    width: 90%;
+   
+}
+.css{
+    width: 85%;
+  
+}
+.javascript{
+    width: 65%;
+  
+}
+.bootstrap{
+    width: 70%;
+
+}
+.about-head{
+    color: blueviolet;
+}
+.para{
+    margin: 22px 0px;
+
+}
+.para p{
+    font-size: 1.3em;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+/* services styles */
+
+#services{
+    max-width: 1600px;
+    margin: auto;
+}
+.services-head{
+    text-align: center;
+    padding: 22px;
+    margin: 10px;
+    
+}
+.services-head h1{
+    font-size: 2.5rem;
+}
+.services-head p{
+    font-size: 1rem;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 10px;
+    width: 30%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+.icon-card{
+    border: 8px solid rgba(137, 43, 226, 0.482);
+    padding: 20px;
+    border-radius: 33px;
+}
+.card-details{
+    margin: 22px 0;
+}
+.card-details h2{
+    font-size: 1.2rem;
+    margin: 12px 0;
+}
+.card-details p{
+    line-height: 26px;
+
+}
+
+/* projects container */
+
+.bg-project{
+    margin: 33px 0;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay-project{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.444);
+    height: 350px;
+}
+.project-container{
+    max-width: 1600px;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+}
+.card-pg i{
+    font-size: 2.5rem;
+    margin: 22px 0;
+    border: 6px solid gray;
+    padding: 12px;
+    border-radius: 33px;
+
+}
+.card-pg h2{
+    font-weight: 200;
+}
+.card-pg h3{
+    font-weight: 100;
+}
+
+
+/* portfolio */
+#portfolio{
+    text-align: center;
+    max-width: 1500px;
+    margin: auto;
+}
+.cards-pf{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.port-card33{
+    width: auto;
+    margin: 12px;
+   
+    background-color: white;
+    height: 260px;
+    text-align: left;
+    border-radius: 5px;
+
+}
+.port-card33 img{
+    width: 300px;
+}
+
+.card-info-pf{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+    transition: all 1s;
+}
+.card-info-pf i{
+    font-size: 33px;
+    cursor: pointer;
+    color: rgba(0, 0, 255, 0.542);
+}
+.card-info-pf h3{
+    font-weight: 600;
+}
+
+/* blog container */
+#Blog{
+    max-width: 1500px;
+    margin: 100px auto;
+
+}
+.container-blog{
+    text-align: left;
+}
+.cards-blg{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card33-blg{
+    background-color: white;
+    padding: 0%;
+    max-width: 300px;
+    margin: 12px;
+    border-radius: 12px;
+
+}
+.describe-blg{
+    padding: 12px;
+
+    
+}
+.descript-blg-ides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.card33-blg a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.img-blg img{
+    width: 300px;
+    border-radius: 12px;
+}
+.card33-blg p{
+    font-size: 14px;
+    
+    line-height: 28px ;
+    /* padding: 12px; */
+}
+
+/* contact styling */
+#footer{
+   /* padding: 33px; */
+   background-image: url(./images/bg2.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   /* width: 100%; */
+   height: 600px;
+}
+#contact{
+    padding-top: 40px;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    margin: 22px auto;
+    max-width: 1300px;
+
+}
+.contact-container form{
+    width: 45%;
+    /* background-color: rgba(245, 245, 245, 0.139); */
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.form-heading {
+    margin:10px;
+    border-bottom: 5px solid rgba(0, 0, 255, 0.131);
+}
+.input-space{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.input-space input{
+    width: 350px;
+    padding: 8px;
+}
+.input-space textarea{
+    padding: 8px;
+
+}
+.input-space button{
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid gainsboro;
+   background-color: rgba(0, 0, 255, 0.816);
+   color: white;
+   cursor: pointer;
+}
+.contact-info{
+    width: 45%;
+    /* background-color: rgba(250, 235, 215, 0.156); */
+
+}
+
+.contact-info{
+    padding: 33px;
+}
+.info-head{
+    margin: 18px;
+    font-size: 1.5rem;
+    border-bottom: 5px solid rgba(0, 0, 255, 0.176)
+}
+.info-descript{
+    margin: 18px;
+    line-height: 36px;
+}
+.address-container{
+    display: flex;
+    align-items: flex-start;
+    margin: 18px;
+}
+.address-container i{
+    margin-right: 12px;
+    color: cornflowerblue;
+}
+.social-media{
+    margin:22px 18px;
+    font-size: 30px;
+    
+}
+.fa-brands{
+    border-radius: 22px;
+    border: 3px solid rgba(0, 0, 255, 0.412);
+    padding: 6px;
+}
+.overlay{
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    background-color: rgba(137, 43, 226, 0.616);
+    height: 100%;
+    width: 100%;
+}
+#copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.841);
+
+}
+.copy-para{
+    text-align: center;
+    color: white;
+}
